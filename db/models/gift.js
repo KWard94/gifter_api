@@ -16,7 +16,7 @@ const GiftSchema = new mongoose.Schema({
       "Solitary",
     ],
   },
-  imgage: String,
+  image: String,
   url: String,
 });
 

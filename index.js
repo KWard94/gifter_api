@@ -4,8 +4,6 @@ const app = express();
 
 const cors = require("cors");
 
-const giftRouter = require("./db/models/gift");
-
 //*------= Middleware =------*\\
 
 app.use(cors());
@@ -13,11 +11,15 @@ app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
+app.use(express.static("public"));
+
 //*------= Start Routes =------*\\
 app.get("/", (req, res) => {
-  //   res.render("index.html");
-  res.send("testing");
+  res.render("index.html");
+  //   res.send("index.js get working");
 });
+
+const giftRouter = require("./controllers/gifts");
 app.use("/gifts", giftRouter);
 
 //*------= End Routes =------*\\
