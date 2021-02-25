@@ -4,12 +4,12 @@ const GiftSchema = new mongoose.Schema({
   name: { type: String, required: true },
   price: String,
   description: String,
-  attributes: {
+  attribute: {
     type: String,
     enum: [
       "Creative",
       "Curious",
-      "Outgoing",
+      "Adventurous",
       "Humorous",
       "Outdoorsy",
       "Social",
