@@ -3,14 +3,14 @@ const router = express.Router();
 
 const Gift = require("../db/models/gift");
 
-// router.get("/", (req, res, next) => {
-//   Gift.find({})
-//     .then((gifts) => res.json(gifts))
-//     .catch((err) => {
-//       console.error(err);
-//       next();
-//     });
-// });
+router.get("/", (req, res, next) => {
+  Gift.find({})
+    .then((gifts) => res.json(gifts))
+    .catch((err) => {
+      console.error(err);
+      next();
+    });
+});
 
 router.get("/:id", (req, res, next) => {
   Gift.findById(req.params.id)
