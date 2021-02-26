@@ -15,8 +15,8 @@ app.use(express.urlencoded({ extended: true }));
 
 //*------= Start Routes =------*\\
 app.get("/", (req, res) => {
-  // res.render("index.html");
-  res.send("index.js get working");
+  res.render("index.html");
+  // res.send("ingdex.js get working");
 });
 
 const giftRouter = require("./controllers/gifts");
