@@ -11,12 +11,12 @@ app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-app.use(express.static("public"));
+// app.use(express.static("public"));
 
 //*------= Start Routes =------*\\
 app.get("/", (req, res) => {
-  res.render("index.html");
-  //   res.send("index.js get working");
+  // res.render("index.html");
+  res.send("index.js get working");
 });
 
 const giftRouter = require("./controllers/gifts");
