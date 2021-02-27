@@ -22,6 +22,9 @@ app.get("/", (req, res) => {
 const giftRouter = require("./controllers/gifts");
 app.use("/gifts", giftRouter);
 
+const attributeRouter = require("./controllers/attrubutes");
+app.use("/attributes", attributeRouter);
+
 //*------= End Routes =------*\\
 
 //*------= Start App =------*\\
