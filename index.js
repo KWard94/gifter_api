@@ -25,6 +25,9 @@ app.use("/gifts", giftRouter);
 const attributeRouter = require("./controllers/attrubutes");
 app.use("/attributes", attributeRouter);
 
+const suggestedRouter = require("./controllers/suggesteds");
+app.use("/suggestion", suggestedRouter);
+
 //*------= End Routes =------*\\
 
 //*------= Start App =------*\\
