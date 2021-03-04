@@ -5,20 +5,7 @@ const data = require("./seed.json");
 const Attribute = require("../db/models/attribute");
 const attData = require("./attribute.json");
 
-// const Suggested = require("../db/models/suggested");
-// const suggestData = require("./suggested.json");
-
 const runSeeds = () => {
-  // Suggested.deleteMany({})
-  //   .then(() => {
-  //     return Suggested.insertMany(suggestData);
-  //   })
-  //   .then(console.log)
-  //   .catch(console.error)
-  //   .finally(() => {
-  //     process.exit();
-  //   });
-
   Gift.deleteMany({})
     .then(() => {
       return Gift.insertMany(data);
