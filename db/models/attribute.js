@@ -11,6 +11,8 @@ const AttributeSchema = new mongoose.Schema({
       "Outdoorsy",
       "Social",
       "Solitary",
+      "Laid-Back",
+      "Crafty",
     ],
   },
 });
