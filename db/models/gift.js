@@ -14,6 +14,8 @@ const GiftSchema = new mongoose.Schema({
       "Outdoorsy",
       "Social",
       "Solitary",
+      "Laid-Back",
+      "Crafty",
     ],
   },
   image: String,
